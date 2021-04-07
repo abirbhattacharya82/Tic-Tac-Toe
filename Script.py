@@ -1,11 +1,19 @@
 from tkinter import *
 window=Tk()
 window.title("Tic Tac Toe")
+def playable():
+    if button1['text']!="" and button2['text']!="" and button3['text']!="" and button4['text']!="" and button5['text']!="" and button6['text']!="" and button7['text']!="" and button8['text']!="" and button9['text']!="":
+        l1['text']="Match is Drawn"
+        disabler()
+        return False
+    else:
+        return True
 def clicked1():
     if button1['text']=="":
         if l1['text']=="Player 1's Turn":
             button1['text']="X"
-            l1['text']="Player 2's Turn"
+            if playable()==True:
+                l1['text']="Player 2's Turn"
         else:
             button1['text']='O'
             l1['text']="Player 1's Turn"
@@ -14,7 +22,8 @@ def clicked2():
     if button2['text']=="":
         if l1['text']=="Player 1's Turn":
             button2['text']="X"
-            l1['text']="Player 2's Turn"
+            if playable()==True:
+                l1['text']="Player 2's Turn"
         else:
             button2['text']="O"
             l1['text']="Player 1's Turn"
@@ -23,7 +32,8 @@ def clicked3():
     if button3['text']=="":
         if l1['text']=="Player 1's Turn":
             button3['text']="X"
-            l1['text']="Player 2's Turn"
+            if playable()==True:
+                l1['text']="Player 2's Turn"
         else:
             button3['text']="O"
             l1['text']="Player 1's Turn"
@@ -32,7 +42,8 @@ def clicked4():
     if button4['text']=="":
         if l1['text']=="Player 1's Turn":
             button4['text']="X"
-            l1['text']="Player 2's Turn"
+            if playable()==True:
+                l1['text']="Player 2's Turn"
         else:
             button4['text']="O"
             l1['text']="Player 1's Turn"
@@ -41,7 +52,8 @@ def clicked5():
     if button5['text']=="":
         if l1['text']=="Player 1's Turn":
             button5['text']="X"
-            l1['text']="Player 2's Turn"
+            if playable()==True:
+                l1['text']="Player 2's Turn"
         else:
             button5['text']="O"
             l1['text']="Player 1's Turn"
@@ -50,7 +62,8 @@ def clicked6():
     if button6['text']=="":
         if l1['text']=="Player 1's Turn":
             button6['text']="X"
-            l1['text']="Player 2's Turn"
+            if playable()==True:
+                l1['text']="Player 2's Turn"
         else:
             button6['text']="O"
             l1['text']="Player 1's Turn"
@@ -59,7 +72,8 @@ def clicked7():
     if button7['text']=="":
         if l1['text']=="Player 1's Turn":
             button7['text']="X"
-            l1['text']="Player 2's Turn"
+            if playable()==True:
+                l1['text']="Player 2's Turn"
         else:
             button7['text']="O"
             l1['text']="Player 1's Turn"
@@ -68,7 +82,8 @@ def clicked8():
     if button8['text']=="":
         if l1['text']=="Player 1's Turn":
             button8['text']="X"
-            l1['text']="Player 2's Turn"
+            if playable()==True:
+                l1['text']="Player 2's Turn"
         else:
             button8['text']="O"
             l1['text']="Player 1's Turn"
@@ -77,7 +92,8 @@ def clicked9():
     if button9['text']=="":
         if l1['text']=="Player 1's Turn":
             button9['text']="X"
-            l1['text']="Player 2's Turn"
+            if playable()==True:
+                l1['text']="Player 2's Turn"
         else:
             button9['text']="O"
             l1['text']="Player 1's Turn"
