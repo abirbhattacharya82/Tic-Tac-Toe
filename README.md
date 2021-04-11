@@ -6,7 +6,7 @@ In this Repository we make the game using Tkinter in Python. Here two human are 
 For beginners to python, Tkinter is a GUI framework for Python that allows for buttons, graphics and alot of other things to be done in a window.
 --------------------------------------------------
 ## Demo:
-![](Demo.png)
+![](Demo1.png) ![](Demo.png)
 --------------------------------------------------
 ## Contributors:
 #### [List of Contributors](Contributors/README.md)
