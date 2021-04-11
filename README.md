@@ -10,6 +10,7 @@ For beginners to python, Tkinter is a GUI framework for Python that allows for b
 --------------------------------------------------
 ## Contributors:
 #### [List of Contributors](Contributors/README.md)
+--------------------------------------------------
 ### Want to Contribute but Stuck?
 ### Check [How to Contribute](how_to_contribute.md)
 --------------------------------------------------
