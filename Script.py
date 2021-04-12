@@ -3,11 +3,11 @@ import Intro
 
 window=Tk()
 window.title("Tic Tac Toe")
-f=open("Name.txt","r")
-l=f.readlines()[0]
+participants=open("Name.txt","r") # participants_Names of players
+l=participants.readlines()[0]
 
-s1=l[:l.index(',')]
-s2=l[l.index(',')+2:]
+s1=l[:l.index(',')]  # player one (s1)
+s2=l[l.index(',')+2:] # player two ( s2)
 
 def playable():
     if button1['text']!="" and button2['text']!="" and button3['text']!="" and button4['text']!="" and button5['text']!="" and button6['text']!="" and button7['text']!="" and button8['text']!="" and button9['text']!="":
@@ -18,7 +18,7 @@ def playable():
         return True
 def clicked1():
     z=s1+"'s Turn"
-    if button1['text']=="":
+    if button1['text']=="": 
         if l1['text']==z:
             button1['text']="X"
             if playable()==True:
@@ -216,8 +216,8 @@ button8=Button(window,text="",width=10,height=5,command=clicked8,font=("10"))
 button8.grid(row=2,column=1)
 button9=Button(window,text="",width=10,height=5,command=clicked9,font=("10"))
 button9.grid(row=2,column=2)
-dd=s1+"'s Turn"
-l1=Label(window,text=dd)
+Footnotes=s1+"'s Turn "
+l1=Label(window,text=Footnotes)
 l1.grid(row=3,column=0,columnspan=3)
 
 window.mainloop()
